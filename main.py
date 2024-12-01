@@ -4,17 +4,12 @@ import threading
 import random
 from datetime import datetime
 
-try:
-    from colorama import Style, Fore
-    import tls_client
-    from fake_useragent import UserAgent
-    from Static.Methods import StaticMethods
-    from Static.Values import StaticValues
-    from Handler.ErrorHandler import Handler
-except:
-    print("Đang cài đặt thư viện...")
-    os.system("pip install -r requirements.txt")
-    os.system("python3 main.py")
+from colorama import Style, Fore
+import tls_client
+from fake_useragent import UserAgent
+from Static.Methods import StaticMethods
+from Static.Values import StaticValues
+from Handler.ErrorHandler import Handler
 
 class ChuongTrinh:
     def _xoa_man_hinh(self):
